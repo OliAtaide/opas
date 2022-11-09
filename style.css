@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+h1 {
+    color: white;
+    line-height: 30px;
+    letter-spacing: 0;
+}
+
+h1 span:first-child {
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: normal;
+    line-height: 0;
+    font-stretch: condensed;
+}
+
+h1 span:last-child {
+    font-family: 'Arial';
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.container {
+    width: 600px;
+}
+
+nav {
+    background-image: url('header-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 66.64%;
+    padding-top: 20px;
+}
+
+.bloco-lg .row,
+.bloco-lg .cartao,
+.bloco-lg .img-fluid {
+    height: 190px;
+}
+
+.bloco-sm .row,
+.bloco-sm .cartao,
+.bloco-sm .img-fluid {
+    height: 150px;
+}
+
+.img-fluid{
+    object-fit: cover;
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bloco-titulo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: #FF6905;
+    margin-bottom: 30px;
+}
+
+.cartao-titulo {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: #236192;
+}
+
+.cartao-texto {
+    overflow: hidden;
+}
+
+main {
+    font-family: 'Arial';
+    margin-top: 54px;
+}
+
+main,
+nav {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.row:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.btn-orange, .btn-blue{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+.btn-orange{
+    background-color: #FF6905;
+}
+
+.btn-blue{
+    background-color: #236192;
+}
+
+footer{
+    background-color: #505359;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.btn-facebook{
+    background-color: white;
+}
+
+footer .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.btn-facebook i, .btn-facebook svg{
+    color: #4660A5;
+    font-size: 30px;
+    line-height: 10%;
+}
+
+.btn-twitter{
+    background-color: #55ACEE;
+}
+
+.btn-link{
+    background-color: #888888;
+}

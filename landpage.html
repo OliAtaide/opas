@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+    .navbar {
+        background-color: #236192;
+        height: 80px;
+    }
+
+    .search {
+        height: 40px;
+        background-color: transparent;
+    }
+
+    .search input {
+        background-color: transparent;
+        color: white;
+    }
+
+    .search input::placeholder,
+    .navbar i {
+        color: white;
+    }
+
+    .page-title {
+        font-family: 'Open Sans';
+        font-weight: 800;
+        font-size: 36px;
+        color: #236192;
+    }
+
+    .grid-btn {
+        padding: 0;
+        font-size: 2em;
+    }
+
+    .buttons a {
+        width: 50%;
+        background-color: #236192;
+    }
+
+    .card {
+        font-family: 'Arial';
+        height: 600px;
+    }
+
+    .card-img-top,
+    .modal img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .modal img {
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 24px;
+        color: #236192;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .card-text {
+        overflow: hidden;
+    }
+
+    .card-text,
+    .card a {
+        font-size: 18px;
+    }
+
+    .modal-dialog {
+        max-width: 1140px;
+    }
+
+    .modal-body {
+        padding: 40px;
+    }
+
+    .modal-heading {
+        font-size: 24px;
+        color: #FE6720;
+    }
+
+    .modal-buttons {
+        display: flex;
+    }
+
+    .modal-buttons .btn {
+        background: #236192;
+        border-radius: 99px;
+        width: 65px;
+        height: 65px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal .row,
+    .flex-column {
+        height: 300px;
+    }
+
+    .modal-buttons span {
+        font-size: 36px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand me-auto">
+                LAFO
+            </a>
+            <div class="d-flex">
+                <form class="search form-control d-flex" role="search">
+                    <input class="me-2 border-0" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn d-flex align-items-center" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+                <button class="btn grid-btn ms-5">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+        Launch demo modal
+    </button>
+
+    <div class="modal fade" tabindex="-1" aria-hidden="false" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-4">
+                        <div class="col">
+                            <img src="placeholder-image.png" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col">
+                            <div class="d-flex flex-column">
+                                <h3 class="modal-heading mb-auto">
+                                    Reporting guidelines: simple and powerful tools to increase the impact and
+                                    visibility of your research: a virtual course on enhancing the value of research
+                                    with research reporting standards.
+                                </h3>
+                                <div class="modal-buttons">
+                                    <button class="btn me-3">
+                                        <span class="material-symbols-outlined">
+                                            library_music
+                                        </span>
+                                    </button>
+                                    <button class="btn">
+                                        <span class="material-symbols-outlined">
+                                            video_library
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h6>
+                            Introduction:
+                        </h6>
+                        <p>
+                            This course is the result of a collaboration between the EQUATOR Network and the Pan
+                            American
+                            Health Organization / World Health Organization. It is aimed at increasing the value of
+                            research
+                            and reducing research waste by enabling people who are planning to conduct, report, edit,
+                            publish or appraise research for health, with current research reporting standards. This
+                            includes, among others, graduate and undergraduate students, PAHO-OAS Scholars, PAHO staff
+                            and
+                            other professionals at international organizations and research institutions, researchers
+                            and
+                            research managers, editors, peer reviewers, and others with an interest in improving the
+                            quality
+                            of research for health projects and increasing the usability of reports for decision-making.
+                        </p>
+                        <p>
+                            This is an introductory course. It does not replace formal training in research methods,
+                            such as
+                            graduate degrees in epidemiology. The course provides an overview of good reporting practice
+                            at
+                            all stages of the research pathway.
+                        </p>
+                        <p>
+                            The course aims to help participants to deliver impactful high-quality research in line with
+                            the
+                            recommendations of PAHO’s Policy on Research for Health and the Strategy on Research for
+                            Health
+                            of the World Health Organization. The ideal time to take this course is as an introductory
+                            activity before beginning and finalizing your research proposal.
+                        </p>
+                        <h6>
+                            Objectives:
+                        </h6>
+                        <p>
+                            At the end of this course, participants will be able to use research reporting guidelines at
+                            many stages, from the planning of the research proposal to the dissemination of the research
+                            findings. This will make their research processes more transparent, well reported, and
+                            relevant
+                            for national and international health agendas. We intend students to first use reporting
+                            guidelines at an introductory level with assistance from more experienced colleagues or
+                            within a
+                            research team, rather than becoming independent experts.
+                        </p>
+                        <h6>
+                            Course Structure:
+                        </h6>
+                        <p>
+                            Module 1. Importance of good research reporting: be ethical, thorough and make your editor
+                            “happy”
+                        </p>
+                        <p>
+                            Module 2. Road map to reporting guidelines: how to find them and use them
+                        </p>
+                        <p>
+                            Module 3. Getting your work published more easily: structure and rationale to make your
+                            report
+                            relevant for health
+                        </p>
+                        <p>
+                            Module 4. Linking research planning, knowledge translation, and policies
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <h1 class="page-title my-5">VIRTUAL CAMPUS FOR PUBLIC HEALTH</h1>
+        <div class="row row-cols-3">
+            <div class="col">
+                <div class="card">
+                    <img src="placeholder-image.png" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title my-3">Reporting guidelines</h5>
+                        <p class="card-text mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet tristique et euismod
+                            enim. Bibendum malesuada ultrices elementum in habitasse nulla placerat bibendum.
+                            Mauris, sed id gravida augue. Sed pulvinar donec urna a dolor purus. Ullamcorper vel
+                            ultrices quis dignissim.
+                        </p>
+                        <div class="buttons d-flex">
+                            <a href="#" class="btn btn-primary me-3">
+                                Ver mais
+                                <i class="bi bi-plus"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                Baixar
+                                <i class="bi bi-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="placeholder-image.png" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title my-3">
+                            Family planning: update on family planning for primary health care
+                        </h5>
+                        <p class="card-text mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet tristique et euismod
+                            enim. Bibendum malesuada ultrices elementum in habitasse nulla placerat bibendum.
+                            Mauris, sed id gravida augue. Sed pulvinar donec urna a dolor purus. Ullamcorper vel
+                            ultrices quis dignissim.
+                        </p>
+                        <div class="buttons d-flex">
+                            <a href="#" class="btn btn-primary me-3">
+                                Ver mais
+                                <i class="bi bi-plus"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                Baixar
+                                <i class="bi bi-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="placeholder-image.png" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title my-3">Immediate contraception post obstetrical event</h5>
+                        <p class="card-text mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet tristique et euismod
+                            enim. Bibendum malesuada ultrices elementum in habitasse nulla placerat bibendum.
+                            Mauris, sed id gravida augue. Sed pulvinar donec urna a dolor purus. Ullamcorper vel
+                            ultrices quis dignissim.
+                        </p>
+                        <div class="buttons d-flex">
+                            <a href="#" class="btn btn-primary me-3">
+                                Ver mais
+                                <i class="bi bi-plus"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                Baixar
+                                <i class="bi bi-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</html>
