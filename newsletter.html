@@ -5,53 +5,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Newsletter OPAS</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
     <div class="container">
         <header>
-            <nav>
-                <h1>
-                    <span>
-                        VIRTUAL CAMPUS
-                        FOR PUBLIC HEALTH
-                    </span>
-                    <br>
-                    <span>
-                        NEWS
-                    </span>
-                </h1>
+            <nav class="cabecalho">
+                <div class="d-flex">
+                    <div class="cabecalho-titulo me-auto">
+                        <span>
+                            VIRTUAL CAMPUS
+                            FOR PUBLIC HEALTH
+                        </span>
+                        <span>
+                            NEWS
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="img-fluid" src="paho.png" width="200px" alt="">
+                    </div>
+                </div>
             </nav>
         </header>
         <main>
+            <div class="mes-ano text-end">
+                SEPTIEMBRE 2021
+            </div>
             <div class="bloco-lg">
                 <div class="editorial-titulo bloco-titulo">
                     EDITORIAL
                 </div>
                 <div class="row w-100">
-                    <div class="col">
-                        <img src="placeholder-image.png" alt="" class="img-fluid">
+                    <div class="col-6">
+                        <a href="">
+                            <img src="placeholder-image.png" alt="" class="img-fluid">
+                        </a>
                     </div>
-                    <div class="col">
+                    <div class="col-6">
                         <div class="cartao">
-                            <div class="cartao-titulo">
-                                Introduction to the COVID-19 vaccine: guidance to identify priority groups and develop
-                                micro-planning.
-                            </div>
-                            <p class="cartao-texto">
-                                The purpose of this course is to provide tools to the health personnel in charge of
-                                planning
-                                the
-                                introduction of the COVID-19 vaccine to prioritize the population...
-                            </p>
+                            <a href="" class="cartao-titulo"
+                                title="Introducción de la vacuna contra la COVID-19: Orientaciones para determinar los grupos prioritarios y elaborar la microplanificación">
+                                Introducción de la vacuna contra la COVID-19: Orientaciones para determinar los grupos
+                                prioritarios y elaborar la microplanificación
+                            </a>
+                            <span class="cartao-texto">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac eros eu nunc hendrerit
+                                lacinia eu a urna. Morbi varius, sapien vitae ultricies condimentum, arcu quam consequat
+                                tortor, in commodo nunc metus eleifend lacus. Duis a arcu sit amet dolor porta tempus ac
+                                ut quam. Ut tincidunt ante nisi, in facilisis augue tempus eget. Proin ac pellentesque
+                                quam. Duis eu pharetra nisi, vitae euismod leo. Sed eget volutpat purus. Mauris placerat
+                                mi vitae sapien ultrices, nec tristique urna luctus. Sed dolor ex, consectetur
+                                condimentum nisi a, pharetra hendrerit ipsum. Aenean interdum lorem eget est hendrerit,
+                                ac laoreet enim vestibulum. Aenean volutpat diam ut ex scelerisque, sit amet dictum
+                                neque aliquet. Donec ullamcorper venenatis est sed blandit. Donec nec ornare est. Sed
+                                sagittis nisl purus, vel pharetra leo maximus eu. Nunc mattis eleifend lorem vel
+                                convallis. Sed aliquet vestibulum nulla id sollicitudin.
+                            </span>
+                            <a href="" class="cartao-link">
+                                Leer más
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="bloco bloco-sm">
+                <div class="bloco-titulo">
+                    DESTACADOS
+                </div>
+                <div class="row w-100">
+                    <div class="col">
+                        <a href="" class="position-relative d-block">
+                            <div class="img-label position-absolute"></div>
+                            <img src="placeholder-image.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-8">
+                        <div class="cartao">
+                            <a href="Directrices para la elaboración de informes de investigación" class="cartao-titulo"
+                                title="Directrices para la elaboración de informes de investigación">
+                                Directrices para la elaboración de informes de investigación
+                            </a>
+                            <span class="cartao-texto">
+                                Al finalizar el curso sobre "Directrices para la elaboración de informes: herramientas
+                                simples y poderosas para incrementar el impacto y la visibilidad de la investigación"
+                                los participantes serán capaces de utilizar las directrices para la elaboración de
+                                informes en muchas etapas, desde la planificación de una propuesta de investigación
+                                hasta la diseminación de los resultados. Esto conducirá a procesos de investigación más
+                                transparentes, mejor informados, y de mayor relevancia a las agendas de salud nacionales
+                                e internacionales.
+                            </span>
                             <span class="cartao-detalhes">
-                                Available in <a href="">Spanish</a>
+                                Disponible en <a href="">español</a>, <a href="">inglés</a> y <a href="">portugués</a>.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row w-100">
+                    <div class="col">
+                        <a href="" class="position-relative d-block">
+                            <div class="img-label position-absolute"></div>
+                            <img src="placeholder-image.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-8">
+                        <div class="cartao">
+                            <a href="" class="cartao-titulo"
+                                title="Directrices para la elaboración de informes de investigación">
+                                Planificación familiar: Actualización en planificación familiar para atención primaria
+                                de salud
+                            </a>
+                            <span class="cartao-texto">
+                                Este curso virtual busca dar orientación específica y práctica sobre los 21 métodos
+                                modernos de planificación familiar siguiendo la guía de la Organización Mundial de la
+                                Salud de 2019, y contribuir a la reducción de la mortalidad materna y morbilidad materna
+                                grave.
+                            </span>
+                            <span class="cartao-detalhes">
+                                Disponible en <a href="">español</a>, <a href="">inglés</a> y <a href="">portugués</a>.
                             </span>
                         </div>
                     </div>
@@ -60,52 +138,57 @@
             <hr>
             <div class="bloco bloco-sm">
                 <div class="bloco-titulo">
-                    HIGHLIGHTS
+                    NUEVOS CURSOS
                 </div>
                 <div class="row w-100">
                     <div class="col">
-                        <img src="placeholder-image.png" alt="" class="img-fluid">
+                        <a href="" class="position-relative d-block">
+                            <div class="img-label position-absolute"></div>
+                            <img src="placeholder-image.png" alt="" class="img-fluid">
+                        </a>
                     </div>
                     <div class="col-8">
                         <div class="cartao">
-                            <div class="cartao-titulo">
-                                Reporting guidelines
-                            </div>
-                            <p class="cartao-texto">
-                                At the end of this course, participants will be able to use research
-                                reporting guidelines at many stages, from the planning of the
-                                research proposal to the dissemination of the research findings.
-                                This will make their research processes more transparent, well
-                                reported, and relevant for national and international health
-                                agendas.
-                            </p>
+                            <a href="" class="cartao-titulo"
+                                title="Estrategias de evaluación en educación basada en competencias para profesionales de la salud con enfoque en salud materna y perinatal">
+                                Estrategias de evaluación en educación basada en competencias para profesionales de la
+                                salud con enfoque en salud materna y perinatal
+                            </a>
+                            <span class="cartao-texto">
+                                La iniciativa brinda un panorama general acerca del nuevo modelo de evaluación en
+                                educación basado en las competencias, en el cual el aprendizaje se concentra en el
+                                desarrollo de las capacidades durante el proceso, por encima de los resultados
+                                obtenidos, además de proveer una situación contextualizada que favorece un aprendizaje
+                                real y significativo.
+                            </span>
                             <span class="cartao-detalhes">
-                                Available in <a href="">English</a>, <a href="">Spanish</a> and <a
-                                    href="">Portuguese</a>
+                                Disponible en <a href="">español</a>, <a href="">inglés</a> y <a href="">portugués</a>.
                             </span>
                         </div>
                     </div>
                 </div>
                 <div class="row w-100">
                     <div class="col">
-                        <img src="placeholder-image.png" alt="" class="img-fluid">
+                        <a href="" class="position-relative d-block">
+                            <div class="img-label position-absolute"></div>
+                            <img src="placeholder-image.png" alt="" class="img-fluid">
+                        </a>
                     </div>
                     <div class="col-8">
                         <div class="cartao">
-                            <div class="cartao-titulo">
-                                Reporting guidelines
-                            </div>
-                            <p class="cartao-texto">
-                                At the end of this course, participants will be able to use research
-                                reporting guidelines at many stages, from the planning of the
-                                research proposal to the dissemination of the research findings.
-                                This will make their research processes more transparent, well
-                                reported, and relevant for national and international health
-                                agendas.
-                            </p>
+                            <a href="" class="cartao-titulo"
+                                title="Lineamientos para el manejo de la retinopatía de la prematuridad, prevención y tamizaje">
+                                Lineamientos para el manejo de la retinopatía de la prematuridad, prevención y tamizaje
+
+                            </a>
+                            <span class="cartao-texto">
+                                Este programa de aprendizaje virtual pretende que los participantes
+                                conozcan y pongan en práctica las recomendaciones sobre la prevención y el tamizaje de
+                                la retinopatía de la prematuridad identificadas por la Guía de Práctica Clínica de la
+                                Organización Panamericana de la Salud.
+                            </span>
                             <span class="cartao-detalhes">
-                                Available in <a href="">English</a>, <a href="">Spanish</a> and <a
-                                    href="">Portuguese</a>
+                                Disponible en <a href="">español</a>, <a href="">inglés</a> y <a href="">portugués</a>.
                             </span>
                         </div>
                     </div>
@@ -123,7 +206,7 @@
             <hr class="mx-4">
             <div class="bloco">
                 <div class="bloco-titulo">
-                    NEWS FROM NODES
+                    NOVEDADES DE LOS NODOS
                 </div>
                 <div class="cartao my-3">
                     <div class="cartao-titulo">
@@ -168,24 +251,26 @@
             </div>
             <div class="bloco">
                 <div class="bloco-titulo">
-                    WEBINAR RECORDINGS
+                    GRABACIÓN DE SEMINARIOS
                 </div>
                 <div class="cartao">
                     <div class="cartao-titulo">
-                        COVID-19: PARTNERSHIPS TO BRING TRANNING TO THE FRONTLINE
+                        COVID-19: COOPERACIÓN PARA LLEVAR LA FORMACIÓN A LA PRIMERA LÍNEA
                     </div>
                     <div class="cartao-texto">
                         <p>
-                            This webinar was organized by the Virtual Campus and Open WHO to celebrate World Spanish.
-                            Language Day and its importance in bringing life-saving knowledge to workers on the front
-                            line
-                            during the COVID-19 pandemic in the Americas and elsewhere.
+                            Este seminario web fue organizado por el Campus Virtual y Open WHO para celebrar el Día
+                            Mundial del Idioma Español y su importancia para acercar conocimientos que salvan vidas a
+                            los trabajadores en la primera línea durante la pandemia de COVID-19 en las Américas y en el
+                            resto del mundo hispanohablante.
                         </p>
-                        <a href="">Watch the webinar here</a>
+                        <a href="">
+                            Vea el webinar aquí
+                        </a>
                         <p>
-                            Check-out these interviews with two of the presenters of the webinar, Carolina Rodriguez,
-                            University of the Republic, Uruguay; and Perla Zeledon, Nicaragua, who share the experiences
-                            in their countries with virtual education during the COVID-19 pandemic.
+                            Compartimos dos entrevistas realizadas a dos de las presentadores del seminario, Carolina
+                            Rodriguez, Universidad de la República, Uruguay; y Perla Zeledon, Nicaragua, quienes cuentan
+                            las experiencias en sus países con la educación virtual y la pandemia COVID-19.
                         </p>
                         <div class="row">
                             <div class="col">
@@ -198,30 +283,62 @@
                     </div>
                 </div>
             </div>
-            <hr>
+            <hr class="mx-4">
             <div class="cartao">
                 <div class="cartao-titulo">
-                    THE NEED TO INVEST IN NURSING: LESSONS LEARNED FROM THE PANDEMIC
+                    LA NECESIDAD DE INVERTIR EN ENFERMERÍA: ENSEÑANZAS APRENDIDAS
                 </div>
                 <div class="cartao-texto">
                     <p>
-                        The objective of this webinar was to celebrate the International Nurses Day and discuss the need
-                        to
-                        protect and invest together in nursing professionals.
+                        El objetivo de este seminario fue celebrar el Día Internacional de las enfermeras y los
+                        enfermeros y discutir la necesidad de proteger e invertir juntos en los profesionales de
+                        enfermería.
                     </p>
                     <a href="">
-                        Access the webinar here
+                        Vea el webinar aquí
                     </a>
                 </div>
             </div>
-            <hr>
+            <hr class="mx-4">
+            <div class="cartao">
+                <div class="cartao-titulo">
+                    EL FUTURO DE LA EDUCACIÓN MÉDICA EN LAS AMÉRICAS
+                </div>
+                <div class="cartao-texto">
+                    <p>
+                        Este seminario web buscó promover un debate regional e iniciar un espacio de discusión e
+                        intercambio de experiencias sobre la educación médica.
+                    </p>
+                    <a href="">
+                        Vea el webinar aquí
+                    </a>
+                </div>
+            </div>
+            <hr class="mx-4">
+            <div class="cartao">
+                <div class="cartao-titulo">
+                    LA NECESIDAD DE ENFERMERAS Y ENFERMEROS DE PRÁCTICA AVANZADA EN EL CUIDADO DE LA SALUD
+                </div>
+                <div class="cartao-texto">
+                    <p>
+                        Este seminario web sobre "Lo que hemos aprendido del COVID-19: La necesidad de enfermeras y
+                        enfermeros de práctica avanzada en el cuidado de la salud" buscó discutir el rol de los
+                        enfermeros de práctica avanzada durante la pandemia de COVID-19 y cómo la implementación de ese
+                        rol puede ayudar a los países con baja densidad y distribución de profesionales de la salud.
+                    </p>
+                    <a href="">
+                        Vea el webinar aquí
+                    </a>
+                </div>
+            </div>
+            <hr class="mx-4">
             <div class="w-100 d-flex flex-column">
                 <div class="btn btn-orange">
                     Learn about all the webinars recordings available
                 </div>
             </div>
         </main>
-        <footer class="d-flex justify-content-center">
+        <footer class="d-flex justify-content-center mt-5">
             <div class="d-flex">
                 <a href="" class="btn rounded-circle p-0 btn-facebook">
                     <i class="bi bi-facebook"></i>

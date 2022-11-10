@@ -1,27 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-h1 {
+
+
+.cabecalho-titulo {
     color: white;
-    line-height: 30px;
     letter-spacing: 0;
+    width: 240px;
+    padding-top: 20px;
 }
 
-h1 span:first-child {
-    font-family: 'Noto Sans Mono', monospace;
-    font-size: 36px;
+.cabecalho-titulo span:first-child {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
     font-style: normal;
     font-weight: 800;
+    line-height: 36px;
     letter-spacing: normal;
-    line-height: 0;
     font-stretch: condensed;
 }
 
-h1 span:last-child {
+.cabecalho-titulo span:last-child {
     font-family: 'Arial';
     font-size: 28px;
-    line-height: 36px;
+    line-height: 28px;
 }
 
 .container {
@@ -29,17 +33,24 @@ h1 span:last-child {
 }
 
 nav {
+    height: 130px;
     background-image: url('header-bg.png');
     background-size: contain;
     background-repeat: no-repeat;
-    padding-top: 66.64%;
-    padding-top: 20px;
+}
+
+.bloco-lg{
+    margin-top: 30px;
+}
+
+.mes-ano{
+    margin-top: 10px;
 }
 
 .bloco-lg .row,
 .bloco-lg .cartao,
 .bloco-lg .img-fluid {
-    height: 190px;
+    height: 200px;
 }
 
 .bloco-sm .row,
@@ -48,7 +59,7 @@ nav {
     height: 150px;
 }
 
-.img-fluid{
+.img-fluid {
     object-fit: cover;
 }
 
@@ -76,15 +87,59 @@ nav {
     font-size: 18px;
     line-height: 120%;
     color: #236192;
+    text-decoration: none;
 }
 
 .cartao-texto {
     overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+.cartao-texto,
+.cartao-link,
+.cartao-detalhes {
+    font-size: 12px;
+}
+
+.cartao-link,
+.cartao-detalhes a {
+    color: #1DA9D0;
+    text-decoration: none;
+}
+
+.bloco-lg .cartao-titulo,
+.bloco-lg .cartao-texto,
+.bloco-sm .cartao-titulo,
+.bloco-sm .cartao-texto{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.bloco-lg .cartao-titulo,
+.bloco-sm .cartao-titulo {
+    -webkit-line-clamp: 2;
+}
+
+.bloco-lg .cartao-texto {
+    -webkit-line-clamp: 9;
+}
+
+.bloco-sm .cartao-texto {
+    -webkit-line-clamp: 5;
+}
+
+.bloco-lg .cartao-texto, .bloco-sm .cartao-texto{
+    margin-bottom: auto;
 }
 
 main {
     font-family: 'Arial';
-    margin-top: 54px;
 }
 
 main,
@@ -93,11 +148,12 @@ nav {
     padding-right: 30px;
 }
 
-.row:not(:last-child){
+.row:not(:last-child) {
     margin-bottom: 30px;
 }
 
-.btn-orange, .btn-blue{
+.btn-orange,
+.btn-blue {
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 10px;
@@ -105,25 +161,25 @@ nav {
     color: white;
 }
 
-.btn-orange{
+.btn-orange {
     background-color: #FF6905;
 }
 
-.btn-blue{
+.btn-blue {
     background-color: #236192;
 }
 
-footer{
+footer {
     background-color: #505359;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.btn-facebook{
+.btn-facebook {
     background-color: white;
 }
 
-footer .btn{
+footer .btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,16 +188,26 @@ footer .btn{
     color: white;
 }
 
-.btn-facebook i, .btn-facebook svg{
+.btn-facebook i,
+.btn-facebook svg {
     color: #4660A5;
     font-size: 30px;
     line-height: 10%;
 }
 
-.btn-twitter{
+.btn-twitter {
     background-color: #55ACEE;
 }
 
-.btn-link{
+.btn-link {
     background-color: #888888;
+}
+
+.img-label {
+    width: 10px;
+    height: 100%;
+    background-color: #F78D28;
+    left: 0;
+    top: 0;
+    border-radius: 2px;
 }
